@@ -59,10 +59,13 @@ Job Description + Resumes (PDF/DOCX/TXT)
               ↓
 Screening Agent      → Resume Retrieval Tool (LlamaIndex + ChromaDB RAG)
               ↓  (rate-limit delay)
+
 Ranking Agent        → Fairness self-review + 0–100 scoring
               ↓  (rate-limit delay)
+
 Interview Agent      → 5–7 questions for Top 3 candidates
               ↓  (rate-limit delay)
+
 Recommendation Agent → Final verdict per candidate
               ↓
 Programmatic JSON merge → FinalReport

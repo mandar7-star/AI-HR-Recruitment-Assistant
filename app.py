@@ -29,7 +29,7 @@ from reportlab.platypus import (
 
 st.set_page_config(page_title="AI HR Recruitment Assistant", page_icon="🤖", layout="wide", initial_sidebar_state="expanded")
 
-DEFAULT_API_URL = "http://localhost:8000"
+DEFAULT_API_URL = "https://mandar-borhade-777-ai-hr-recruitment-backend.hf.space"
 MAX_CANDIDATES = 5
 
 # Color scheme

@@ -9,13 +9,21 @@ The system integrates **Groq LLaMA 3.3 70B** for high-speed reasoning, **LlamaIn
 ## 🚀 Key Highlights
 
 - 🤖 **Multi-Agent Orchestration** using **CrewAI**
+  
 - ⚡ **High-Speed Inference** using **Groq LLaMA 3.3 70B** (via LiteLLM)
+  
 - 🔍 **Local Resume Retrieval (RAG)** via **LlamaIndex + ChromaDB** (in-memory, ephemeral, no external vector DB required)
+  
 - 🧮 **Bias-Aware Ranking** — every score ships with an explicit fairness self-review
+  
 - 🎤 **Targeted Interview Questions** auto-generated for the top 3 ranked candidates
+  
 - ✅ **Final Hiring Verdicts** — Strong Hire / Hire / Maybe / No Hire, with strengths & risks
+  
 - 🚀 **FastAPI Backend** with `/analyze` and `/query` endpoints
+  
 - 🖥️ **Interactive Streamlit Dashboard** with candidate comparison table, profile cards, and one-click PDF export
+  
 - 🛡️ **Robust Pipeline Engineering** — JSON-safe parsing, retry with exponential backoff on rate limits, truncated prompts to control token growth, and a full agent execution trace
 
 ---
@@ -23,12 +31,19 @@ The system integrates **Groq LLaMA 3.3 70B** for high-speed reasoning, **LlamaIn
 ## ⭐ Key Features
 
 - **Structured Resume Screening** — extracts matched/missing skills, certifications, awards, notable projects, experience and education into a validated Pydantic schema, grounded strictly in resume text
+  
 - **Objective Candidate Ranking** — scores every candidate 0–100 against the job description, with a written justification, a confidence level, and an explicit bias self-check for name, gender, age, and ethnicity
+  
 - **Role- and Candidate-Specific Interview Questions** — 5–7 mixed technical/behavioral/situational questions per top-3 candidate, tuned to probe matched strengths and identified skill gaps
+  
 - **Committee-Style Hiring Recommendations** — a final verdict, concise summary, key strengths, and key risks for every candidate
+  
 - **Local RAG Retrieval Tool** — the Screening Agent can query indexed resumes (via a HuggingFace `BAAI/bge-small-en-v1.5` embedding index) to confirm details rather than relying purely on prompt context
+  
 - **Rate-Limit-Aware Orchestration** — 5–10s delays between agent stages plus exponential-backoff retries, tuned for Groq's free-tier limits (30 RPM / 12,000 TPM)
+  
 - **Multi-Format Resume Ingestion** — PDF, DOCX, and TXT resumes are parsed server-side, with graceful skipping of unreadable files
+  
 - **Recruiter Dashboard** — sortable comparison table, skill-match rings, verdict pills, and a downloadable PDF report generated with ReportLab
 
 ---
@@ -227,6 +242,8 @@ Upload: resume_1.pdf, resume_2.docx, resume_3.txt
 
 **Your Name**
 
-LinkedIn: https://www.linkedin.com/in/your-profile
+LinkedIn: https://www.linkedin.com/in/mandarborhade
 
-GitHub: https://github.com/your-username
+GitHub: https://github.com/mandar7-star
+
+Live Demo : https://ai-hr-recruitment-assistant.streamlit.app/

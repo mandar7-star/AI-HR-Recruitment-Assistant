@@ -1,0 +1,23 @@
+# Environment variables (contains GROQ_API_KEY)
+.env
+
+# Virtual environment
+last_env/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# ChromaDB / embedding model local cache (if generated at runtime)
+chroma_db/
+*.sqlite3
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
